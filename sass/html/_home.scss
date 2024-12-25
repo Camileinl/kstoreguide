@@ -1,0 +1,81 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixin';
+@import '../utilidades/listas';
+
+
+header {
+    .descripcion{
+        display:none;
+    }
+    .estilo-navbar{
+        background-color: $color-principal;
+        div{
+            .hamburguesa{
+                color:nth($lista-colores,3) ;
+            }
+            .estilo-nav{
+                @include colores ($color-principal, nth($lista-colores,7));                
+                div{
+                    ul{
+                        li{
+                            .pink-hover:hover{
+                                @include colores (nth($lista-colores,3), nth($lista-colores,4));                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+main{
+    div{
+        div{
+            div{
+                div{
+                    .estilo-card{
+                        border-width: thin;
+                        border-color: nth($lista-colores,2);
+                        .imagen-c{
+                            object-fit: $fit;
+                            @include medidas (100%, auto);                        
+                        }
+                        div{
+                            .button:active {
+                                @include colores (nth($lista-colores,7),nth($lista-colores,4));
+                                transform: scale(0.98);                            
+                            }
+
+                            .button{
+                                background-color: nth($lista-colores,3);
+                                border: $color-principal;
+                                transition: background-color 0.3s ease;
+                            }
+
+                            .button:hover{
+                                @include colores (nth($lista-colores,9), nth($lista-colores,4));                            
+                            }
+
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div{
+        .intro{
+            background-color: nth($list: $lista-colores, $n: 8);
+            h2{
+                .intro-boton{
+                    background-color: $color-principal;
+                }
+            }
+        }
+    }
+}
+
+.brown-bg{
+    background-color: nth($list: $lista-colores, $n:2 ); 
+}

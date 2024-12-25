@@ -1,0 +1,51 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixin';
+@import '../utilidades/listas';
+
+
+main{
+    .intro-acerca{
+        background-color: nth($list: $lista-colores, $n: 4);
+    }
+    section{
+        div{
+            .pink-color:active {
+                @include colores (nth($lista-colores,7), nth($lista-colores,4));
+            }
+
+            .pink-color{
+                background-color: nth($lista-colores,3);
+                border: $color-principal;
+                transition: background-color 0.3s ease;
+            }
+
+            .pink-color:hover{
+                @include colores (nth($lista-colores,9), nth($lista-colores,4));                
+            }
+        }
+    }
+    .video-container{
+        position: relative; /* Para crear un contexto para el video */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        padding-top: 50%; /* Relación de aspecto 16:9 */
+        overflow: hidden; /* Evita que el contenido se desborde */  
+        margin: 10px auto; /* Margen más pequeño para móviles */
+        .video-musical{
+            @include video;            
+        }
+        
+    }
+    .estilo-title{
+        color: nth($list: $lista-colores, $n: 6);
+    }
+    section{
+        #acerca-de{
+            @include colores (nth($list: $lista-colores, $n: 5), nth($list: $lista-colores, $n: 2));
+            border: nth($list: $lista-colores, $n: 5) solid 10px;
+            border-radius: 10px;            
+        }
+
+    }
+    
+
+}

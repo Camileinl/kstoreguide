@@ -1,0 +1,19 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixin';
+@import '../utilidades/listas';
+
+main{
+    div{
+        div{
+            div{
+                div{
+                    .estilo-img{
+                        @include medidas (100%, auto);
+                        object-fit: $fit;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
