@@ -11,7 +11,7 @@
     }
 
     main{
-        .estilo-contenedor{
+        .estilo-contenedor{            
             div{            
                 .estilo-row{
                     background-color: nth($list: $lista-colores, $n: 5);
@@ -59,12 +59,11 @@
     main{
         .estilo-contenedor{
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            .contenedor{
+            justify-content: space-between;                                           
+            .contenedor{                
                 flex: 1 1 48%;
                 max-width: 48%;
-                min-height: max-content;
+                
                 .estilo-row{                                   
                     .estilo-column{
                         padding: 15px;

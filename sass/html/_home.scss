@@ -82,7 +82,7 @@ main{
         .text-brown{
             color: nth($lista-colores,2);
             .img-red{
-                @include medidas(32px,32px)
+                @include medidas(24px,24px)
             }
         }
     }

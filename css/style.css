@@ -70,8 +70,8 @@ main div .intro h2 .intro-boton {
   color: #563008;
 }
 .brown-bg div .text-brown .img-red {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
 }
 
 header .divisor {
@@ -200,13 +200,11 @@ main section #acerca-de {
 @media screen and (min-width: 1024px) {
   main .estilo-contenedor {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
   main .estilo-contenedor .contenedor {
     flex: 1 1 48%;
     max-width: 48%;
-    min-height: max-content;
   }
   main .estilo-contenedor .contenedor .estilo-row .estilo-column {
     padding: 15px;
