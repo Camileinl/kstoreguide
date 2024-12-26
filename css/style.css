@@ -66,10 +66,11 @@ main div .intro h2 .intro-boton {
 .brown-bg {
   background-color: #563008;
 }
-.brown-bg div .text-brown {
-  color: #563008;
+.brown-bg div div .text-brown {
+  color: white;
+  text-decoration: none;
 }
-.brown-bg div .text-brown .img-red {
+.brown-bg div div .text-brown .img-red {
   width: 24px;
   height: 24px;
 }

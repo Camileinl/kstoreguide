@@ -79,10 +79,13 @@ main{
 .brown-bg{
     background-color: nth($list: $lista-colores, $n:2 ); 
     div{
-        .text-brown{
-            color: nth($lista-colores,2);
-            .img-red{
-                @include medidas(24px,24px)
+        div{
+            .text-brown{
+                color: nth($lista-colores,4);
+                text-decoration: none;
+                .img-red{
+                    @include medidas(24px,24px)
+                }
             }
         }
     }
