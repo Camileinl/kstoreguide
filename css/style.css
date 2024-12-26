@@ -113,6 +113,10 @@ main div div div div .estilo-img {
   display: block;
 }
 
+main div div div div div div .plato-fav {
+  display: none;
+}
+
 main .intro-acerca {
   background-color: white;
 }
@@ -161,6 +165,8 @@ main section #acerca-de {
     color: white;
     font-size: smaller;
     font-weight: lighter;
+    font-size: medium;
+    font-weight: normal;
   }
   main .estilo-contenedor div .estilo-row {
     background-color: #f5db9f;
@@ -219,6 +225,9 @@ main section #acerca-de {
     max-width: 1000px;
     margin: 20px auto;
     padding-top: 40%;
+  }
+  main div div div div div div .plato-fav {
+    display: block;
   }
 }
 

@@ -1,0 +1,21 @@
+@import '../utilidades/variables';
+@import '../utilidades/mixin';
+@import '../utilidades/listas';
+
+main{
+    div{
+        div{
+            div{
+                div{
+                    div{
+                        div{
+                            .plato-fav{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
